@@ -49,13 +49,17 @@ fieldset {
     margin-bottom: 1.5em;
 }
 
-input:invalid, select:invalid, textarea:invalid {
-    border: 2px solid #FF0000;
-    outline: none;
+.campo input[type="text"]:required,
+.campo input[type="email"]:required,
+.campo input[type="password"]:required,
+.campo input[type="date"]:required,
+.campo select:required, 
+.campo textarea:required {
+    border: 2px solid #FF0000; 
 }
 
-input:invalid:focus, select:invalid:focus, textarea:invalid:focus {
-    border: 2px solid #FFA500;
+input[type="checkbox"]:required:invalid {
+    outline: 2px solid #FF0000; 
 }
 
 .dadospessoais, .dadoscontato, .dadoscadastrais {
